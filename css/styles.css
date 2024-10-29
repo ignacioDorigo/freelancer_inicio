@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+/* Con el reseteo de arriba, 1rem = 16px aproxi */
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    /* width: 20rem; */
+}
+
+.titulo span {
+    font-size: 2rem;
+}
