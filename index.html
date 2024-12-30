@@ -1,23 +1,28 @@
-<!-- Es para indicar que se utilza la ultima version de HTML -->
+<!-- Etiqueta que indica la ultima version de HTML -->
 <!DOCTYPE html>
 
-<!-- Es para indicar el idioma -->
+<!-- Indica lenguaje -->
 <html lang="en">
 
-<!-- Parte no visible de metadatos -->
+<!-- Parte no visible -->
 
 <head>
-    <!-- Para la codificacion -->
     <meta charset="UTF-8">
-
-    <!-- Es para como debe mostrarse -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseñador Freelancer</title>
 
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
 
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
-
+    <title>Diseñador Freelancer</title>
 </head>
 
 <!-- Parte visible -->
@@ -25,130 +30,140 @@
 <body>
 
     <header>
-        <h1 class="titulo">Ignacio Dorigo <span>Freelancer</span></h1>
+        <!-- H1 al h6 son para headers -->
+        <h1 class="titulo">Ignacio Tomas Dorigo <span>Freelancer</span></h1>
+
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
-    <section>
-        <h2 class="titulo">Diseño y Desarrollo Web Freelancer </h2>
-        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none" stroke="#FFC107"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-        </svg>
-        <p>Buenos Aires, Tortuguitas</p>
-        <a href="#">Contactar</a>
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2 class="">Diseño y Desarrollo Web Freelancer</h2>
+            <div class="div-ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFC107"
+                    stroke-linecap="round" stroke-linejoin="round" width="88" height="88" stroke-width="2">
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                </svg>
+                <p>Tortuguitas, Buenos Aires</p>
+            </div>
+            <a class="boton" href="#formulario">Contactar</a>
+        </div>
     </section>
 
-    <main>
+    <main class="contenedor sombra">
         <h2>Mis Servicios</h2>
 
-        <section>
-            <h3>Diseño Web</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-palette">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-            </svg>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi est adipisci fugiat explicabo
-                neque
-                possimus aut! Optio, vel libero.</p>
-        </section>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Diseño Web</h3>
+                <div class="div-svg-servicio">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                        <path
+                            d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
+                        </path>
+                        <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                        <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                        <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                    </svg>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, iste.</p>
+            </section>
+
+
+            <section class="servicio">
+                <h3>Aplicaciones Móviles</h3>
+                <div class="div-svg-servicio">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                        <path d="M4 10l0 6"></path>
+                        <path d="M20 10l0 6"></path>
+                        <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0"></path>
+                        <path d="M8 3l1 2"></path>
+                        <path d="M16 3l-1 2"></path>
+                        <path d="M9 18l0 3"></path>
+                        <path d="M15 18l0 3"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                        <path
+                            d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z">
+                        </path>
+                        <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"></path>
+                    </svg>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, iste.</p>
+            </section>
+
+            <section class="servicio">
+                <h3>E-Commerce</h3>
+                <div class="div-svg-servicio">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                        <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"></path>
+                        <path d="M3 10l18 0"></path>
+                        <path d="M7 15l.01 0"></path>
+                        <path d="M11 15l2 0"></path>
+                    </svg>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, iste.</p>
+            </section>
+
+        </div>
 
         <section>
-            <h3>Aplicaciones Móviles</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" />
-                <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 10l0 6" />
-                <path d="M20 10l0 6" />
-                <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
-                <path d="M8 3l1 2" />
-                <path d="M16 3l-1 2" />
-                <path d="M9 18l0 3" />
-                <path d="M15 18l0 3" />
-            </svg>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi est adipisci fugiat explicabo
-                neque
-                possimus aut! Optio, vel libero.</p>
-        </section>
+            <h2>Contacto</h2>
 
-        <section>
-            <h3>E-Commerce</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
-                <path d="M3 10l18 0" />
-                <path d="M7 15l.01 0" />
-                <path d="M11 15l2 0" />
-            </svg>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi est adipisci fugiat explicabo
-                neque
-                possimus aut! Optio, vel libero.</p>
+            <form action="" id="formulario">
+                <fieldset>
+                    <legend>
+                        Contactame llenando todos los campos
+                    </legend>
+
+                    <div class="div-form-primeraFila">
+                        <div class="campo">
+                            <label for="inputNombre">Nombre</label>
+                            <input type="text" placeholder="Nombre" id="inputNombre">
+                        </div>
+
+                        <div class="campo">
+                            <label for="inputTelefono">Teléfono</label>
+                            <input type="tel" placeholder="Teléfono" id="inputTelefono">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="campo">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" placeholder="Email" id="inputEmail">
+                    </div>
+
+                    <div class="campo">
+                        <label for="inputTextArea">Mensaje</label>
+                        <textarea name="" id="inputTextArea"></textarea>
+                    </div>
+
+                    <input class="boton" id="enviar" type="submit" value="Enviar">
+                </fieldset>
+            </form>
         </section>
     </main>
 
-    <section>
-        <h2>Contacto</h2>
 
-        <form action="">
-            <fieldset>
-                <legend>Contactame llenando todos los campos</legend>
 
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ingrese nombre">
-                </div>
-
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Ingrese telefono">
-                </div>
-
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Ingrese correo electronico">
-                </div>
-
-                <div>
-                    <label>Mensaje</label>
-                    <textarea name="" id=""></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" title="Enviar">
-                </div>
-
-            </fieldset>
-        </form>
-    </section>
-
-    <footer>
-        <p>Todos los derechos reservados. Ignacio Dorigo Freelancer</p>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Ignacio Tomás Dorigo Freelancer</p>
     </footer>
 
 </body>
