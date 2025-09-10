@@ -4,6 +4,7 @@
     --negro: #000;
     --colorPrimario: #FFC107;
     --colorSecundario: #0097A7;
+    --colorSecundarioSombra: #006b77;
     --gris: #757575;
     /* Es el color de fondo este gris claro */
     --grisClaro: #DFE9F3;
@@ -139,11 +140,13 @@ h3 {
     text-transform: uppercase;
     width: 90%;
     text-align: center;
+    transition: all .3s ease-in-out;
 }
 
 @media (width>764px) {
     .boton {
         width: auto;
+
     }
 }
 
@@ -181,7 +184,7 @@ h3 {
     line-height: 1.8;
 }
 
-.servicio{
+.servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,4 +199,92 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* CONTACTO */
+.formulario {
+    width: min(60rem, 100%);
+    background-color: var(--gris);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    color: var(--colorPrimario);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
+.campos-juntos {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 764px) {
+    .campos-juntos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width > 764px) {
+    .campo {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    display: inline-block;
+    width: 7rem;
+    /* width: 70px; */
+}
+
+.formulario input,
+.formulario textarea {
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.formulario__boton {
+    border: none;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.formulario__boton:hover,
+.boton:hover {
+    background-color: var(--colorSecundarioSombra);
+}
+
+@media (width>764px) {
+    .formulario__boton {
+        width: max-content;
+        margin: 0 0 0 auto;
+    }
 }
